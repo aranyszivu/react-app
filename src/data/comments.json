@@ -22,5 +22,11 @@
         "userid": "00000003",
         "commenttext": "This sucks",
         "postedDate": "2020-02-03"
+    },
+    {
+        "postid": 2,
+        "userid": "00000006",
+        "commenttext": "I commented this!",
+        "postedDate": "2020-02-03"
     }
 ]

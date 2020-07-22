@@ -17,6 +17,14 @@ const CommentBlock = (props) => {
         margin:"5px 20px", padding:"10px", backgroundColor:"#cccccc"
     }
 
+    const deleteAvailable = {
+        float: "right",
+        visibility: "hidden"
+    }
+    if(props.comment.userid === "00000006") { //surrogate for Session["CurrentUser"].id
+        deleteAvailable["visibility"] = "auto";
+    }
+
     return (
 
         <div style={{margin:"5px 20px", padding:"10px", backgroundColor:"#cccccc"}}>
@@ -26,7 +34,9 @@ const CommentBlock = (props) => {
             <div style={{textAlign:"left"}}>
                 <img src={process.env.PUBLIC_URL + iconUrl} style={{width:"40px", display: "inline", verticalAlign:"middle"}} />
                 <p style={{display: "inline", padding: "0px 10px"}}><b>{userName}</b></p>
-                <button onClick={removeComment()} style={{float:"right"}}>Delete Post</button>
+                <div style={deleteAvailable}>
+                    <button onClick={removeComment()}> Delete Post</button>
+                </div>
             </div>
         </div>
     );

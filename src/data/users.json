@@ -13,7 +13,7 @@
         "followers":    25,
         "joindate":     "2020-02-20",
         "groups":       [],
-        "iconUrl":      "{process.env.PUBLIC_URL + '/resources/images/avatar.png'}"
+        "iconUrl":      "/resources/images/avatar.png"
     },
     {
         "uid":          "00000003",
@@ -36,6 +36,14 @@
         "username":     "OrdinaryGuy",
         "followers":    25,
         "joindate":     "2018-09-16",
+        "groups":       [],
+        "iconUrl":      "/resources/images/avatar.png"
+    },
+    {
+        "uid":          "00000006",
+        "username":     "YourUsername",
+        "followers":    90,
+        "joindate":     "2018-02-16",
         "groups":       [],
         "iconUrl":      "/resources/images/avatar.png"
     }

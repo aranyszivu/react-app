@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import GalleryPage from './GalleryPage';
 import Posts from '../data/posts.json';
+import { LangContext } from '../LangContext';
 
 class GalleryBlock extends Component {
     constructor(props) {
@@ -43,8 +44,14 @@ class GalleryBlock extends Component {
                 <div id="glryBlock" style={glryBlockStyle}>
                     <GalleryPage page={this.state.page} maxItems={this.state.maxItems} /> <br/>
                     <div id="buttonPanel" style={{textAlign: "center", padding:"10px"}}>
-                        <button onClick={prevPage} disabled={!prevEnabled}>Previous</button>
-                        <button onClick={nextPage} disabled={!nextEnabled}>Next</button>
+                    <LangContext.Consumer>
+                            {(context) => (
+                                <React.Fragment>
+                                    <button onClick={prevPage} disabled={!prevEnabled}>{(context.state.lang === "en") ? "Previous" : "Antérieur"}</button>
+                                    <button onClick={nextPage} disabled={!nextEnabled}>{(context.state.lang === "en") ? "Next" : "Prochain"}</button>
+                                </React.Fragment>
+                            )}
+                        </LangContext.Consumer>
                     </div>
                 </div>
             </div>

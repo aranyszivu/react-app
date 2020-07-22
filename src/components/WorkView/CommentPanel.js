@@ -14,8 +14,8 @@ const CommentPanel = (props) => {
     };
 
     return (
-        <div>
-            <textarea id=""></textarea>
+        <div style={{margin: "10px 0px 0px 0px"}}>
+            <textarea id="commentTextPanel" style={{verticalAlign:"middle", marginRight:"10px"}}></textarea>
             <button onClick={addComment("1", "1", "1")}>Post</button>
         </div>
     );

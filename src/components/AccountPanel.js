@@ -1,4 +1,5 @@
 import React from 'react';
+import { LangContext } from '../LangContext';
 
 const AccountPanel = () => {
     
@@ -16,6 +17,17 @@ const AccountPanel = () => {
                 <p style={{ padding: "0px 5px 0px 0px", display: "inline"}}>{getNumAlerts()}</p> <br/> <br/>
                 <img src={process.env.PUBLIC_URL + '/resources/images/mail.png'} alt="Favourites:" style={{opacity: "0.7", width:"20px", padding: "0px 5px", display: "inline"}} />
                 <p style={{ display: "inline", margin:"0px 5px 0px 0px"}}>{getNumMessages()}</p>
+            </div>
+            <div>
+                <LangContext.Consumer>
+                    {(context) => (
+                            <button onClick={context.toggleLang}>
+                                {
+                                    (context.state.lang === "en") ? "FR" : "EN"
+                                }
+                            </button>
+                    )}
+                </LangContext.Consumer>
             </div>
         </div>
     );
