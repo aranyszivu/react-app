@@ -1,6 +1,7 @@
 import React from 'react';
 import Comments from '../../data/comments.json';
 import Users from '../../data/users.json';
+import { LangContext } from '../../LangContext';
 
 const CommentBlock = (props) => {
     
@@ -35,7 +36,15 @@ const CommentBlock = (props) => {
                 <img src={process.env.PUBLIC_URL + iconUrl} style={{width:"40px", display: "inline", verticalAlign:"middle"}} />
                 <p style={{display: "inline", padding: "0px 10px"}}><b>{userName}</b></p>
                 <div style={deleteAvailable}>
-                    <button onClick={removeComment()}> Delete Post</button>
+                    <LangContext.Consumer>
+                        {(context) => (
+                            <button onClick={removeComment()}>
+                            {
+                                (context.state.lang === "en") ? "Delete" : "Supprimer"
+                            }
+                            </button>
+                        )}
+                    </LangContext.Consumer>
                 </div>
             </div>
         </div>

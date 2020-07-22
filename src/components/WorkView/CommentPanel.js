@@ -1,5 +1,6 @@
 import React from 'react';
 import Comments from '../../data/comments.json';
+import { LangContext } from '../../LangContext';
 
 const CommentPanel = (props) => {
 
@@ -16,7 +17,15 @@ const CommentPanel = (props) => {
     return (
         <div style={{margin: "10px 0px 0px 0px"}}>
             <textarea id="commentTextPanel" style={{verticalAlign:"middle", marginRight:"10px"}}></textarea>
-            <button onClick={addComment("1", "1", "1")}>Post</button>
+            <LangContext.Consumer>
+                    {(context) => (
+                        <button onClick={addComment("1", "1", "1")}>
+                        {
+                           (context.state.lang === "en") ? "Post" : "Poster"
+                        }
+                    </button>
+                 )}
+            </LangContext.Consumer>
         </div>
     );
 }

@@ -18,7 +18,7 @@ const AccountPanel = () => {
                 <img src={process.env.PUBLIC_URL + '/resources/images/mail.png'} alt="Favourites:" style={{opacity: "0.7", width:"20px", padding: "0px 5px", display: "inline"}} />
                 <p style={{ display: "inline", margin:"0px 5px 0px 0px"}}>{getNumMessages()}</p>
             </div>
-            <div>
+            <div style={{textAlign:"right", padding:"10px 40px 0px 0px"}}>
                 <LangContext.Consumer>
                     {(context) => (
                             <button onClick={context.toggleLang}>
