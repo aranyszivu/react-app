@@ -13,7 +13,7 @@ function Gallery() {
       <LangProvider>
         <div style={{width: "100%", overflow: "hidden"}}>
           <Header></Header>
-          <Route path={["/gallery", "/", "/react-site"]} exact component={GalleryBlock} />
+          <Route path={["/gallery", "/", "/react-app"]} exact component={GalleryBlock} />
           <Route path="/work/:workid" exact component={WorkBlock} />
         </div>
       </LangProvider>
