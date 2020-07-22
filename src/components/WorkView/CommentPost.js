@@ -24,7 +24,7 @@ const CommentBlock = (props) => {
                 <p style={{margin:"0"}}>{props.comment.commenttext}</p>
             </div>
             <div style={{textAlign:"left"}}>
-                <img src={iconUrl} style={{width:"40px", display: "inline", verticalAlign:"middle"}} />
+                <img src={process.env.PUBLIC_URL + iconUrl} style={{width:"40px", display: "inline", verticalAlign:"middle"}} />
                 <p style={{display: "inline", padding: "0px 10px"}}><b>{userName}</b></p>
                 <button onClick={removeComment()} style={{float:"right"}}>Delete Post</button>
             </div>

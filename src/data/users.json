@@ -13,7 +13,7 @@
         "followers":    25,
         "joindate":     "2020-02-20",
         "groups":       [],
-        "iconUrl":      "/resources/images/avatar.png"
+        "iconUrl":      "{process.env.PUBLIC_URL + '/resources/images/avatar.png'}"
     },
     {
         "uid":          "00000003",

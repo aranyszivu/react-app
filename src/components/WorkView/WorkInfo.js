@@ -32,13 +32,13 @@ const WorkBlock = (props) => {
         <div style={infoWrapperStyle}>
             <div style={{float:"left", width:"auto", textAlign: "left"}}>
                 <div style={{display:"inline-block", width:"auto", height:"100%"}}>
-                    <img src={getUser(work.user).iconUrl} style={{width:"60px", display: "inline"}} /> 
+                    <img src={process.env.PUBLIC_URL + getUser(work.user).iconUrl} style={{width:"60px", display: "inline"}} /> 
                     <p style={{margin:"5px"}}><b>{getUser(work.user).username}</b></p>
                 </div>
                 <div style={{display:"inline-block", width:"100px", height:"auto"}}>
-                    <img src="/resources/images/heart.png" alt="Favourites:" style={{opacity: "0.7", width:"20px", padding: "0px 5px", display: "inline"}} />
+                    <img src={process.env.PUBLIC_URL + '/resources/images/heart.png'} alt="Favourites:" style={{opacity: "0.7", width:"20px", padding: "0px 5px", display: "inline"}} />
                     <p style={{ padding: "0px 5px 0px 0px", display: "inline"}}>{work.favs}</p> <br/> <br/>
-                    <img src="/resources/images/comment.png" alt="Favourites:" style={{opacity: "0.7", width:"20px", padding: "0px 5px", display: "inline"}} />
+                    <img src={process.env.PUBLIC_URL + '/resources/images/comment.png'} alt="Comments:" style={{opacity: "0.7", width:"20px", padding: "0px 5px", display: "inline"}} />
                     <p style={{ display: "inline"}}>{getNumComments()}</p>
                 </div>
             </div>

@@ -37,7 +37,7 @@ class Header extends Component {
         <div id="hdrWrapper" style={hdrWrapperStyle}>
             <div id="hdrBodyWrapper" style={hdrBodyWrapperStyle}>
                 <div id="hdrSplashWrapper" style={hdrSplashWrapperStyle}>
-                    <img src="/resources/images/sitelogo.png" style={{verticalAlign: "middle", width:"130px", margin: "20px", display: "inline"}} />
+                    <img src={process.env.PUBLIC_URL + '/resources/images/sitelogo.png'} style={{verticalAlign: "middle", width:"130px", margin: "20px", display: "inline"}} />
                     <div style={{display: "inline-block",}}>
                         <h2 style={{fontSize: "300%"}} >Amateur Hour</h2>
                     </div>
