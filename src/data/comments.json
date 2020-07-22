@@ -1,0 +1,26 @@
+[
+    {
+        "postid": 2,
+        "userid": "00000001",
+        "commenttext": "I am commenting!",
+        "postedDate": "2020-02-03"
+    },
+    {
+        "postid": 2,
+        "userid": "00000001",
+        "commenttext": "So am I!",
+        "postedDate": "2020-02-03"
+    },
+    {
+        "postid": 2,
+        "userid": "00000004",
+        "commenttext": "Third",
+        "postedDate": "2020-02-03"
+    },
+    {
+        "postid": 2,
+        "userid": "00000003",
+        "commenttext": "This sucks",
+        "postedDate": "2020-02-03"
+    }
+]

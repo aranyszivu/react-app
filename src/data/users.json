@@ -1,0 +1,42 @@
+[
+    {
+        "uid":          "00000001",
+        "username":     "JohnDoe",
+        "followers":    2,
+        "joindate":     "2020-01-24",
+        "groups":       [],
+        "iconUrl":      "/resources/images/avatar.png"
+    },
+    {
+        "uid":          "00000002",
+        "username":     "JaneDoe",
+        "followers":    25,
+        "joindate":     "2020-02-20",
+        "groups":       [],
+        "iconUrl":      "/resources/images/avatar.png"
+    },
+    {
+        "uid":          "00000003",
+        "username":     "LaceholderP",
+        "followers":    233,
+        "joindate":     "2019-12-24",
+        "groups":       [],
+        "iconUrl":      "/resources/images/avatar.png"
+    },
+    {
+        "uid":          "00000004",
+        "username":     "Fella",
+        "followers":    2212,
+        "joindate":     "2019-08-12",
+        "groups":       [],
+        "iconUrl":      "/resources/images/avatar.png"
+    },
+    {
+        "uid":          "00000005",
+        "username":     "OrdinaryGuy",
+        "followers":    25,
+        "joindate":     "2018-09-16",
+        "groups":       [],
+        "iconUrl":      "/resources/images/avatar.png"
+    }
+]
